@@ -1,1 +1,0 @@
-function second(){return 30}console.log(second());
