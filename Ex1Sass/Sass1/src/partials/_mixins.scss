@@ -1,0 +1,21 @@
+@import 'vars';
+
+@mixin font-size {
+  $initial-size: 2em;
+  $decrement: 0.2em;
+
+  @for $i from 1 through 6 {
+    h#{$i} {
+      font-size: $initial-size - ($decrement * ($i - 1));
+    }
+  }
+}
+
+
+@mixin webmoz ($propiedad, $valor){
+
+  -webkit-#{$propiedad}: $valor;
+  -moz-#{$propiedad}: $valor;
+  #{$propiedad}: $valor;
+
+}
