@@ -1,0 +1,8 @@
+@mixin webmoz ($propiedad, $valor){
+
+    -webkit-#{$propiedad}: $valor;
+    -moz-#{$propiedad}: $valor;
+    #{$propiedad}: $valor;
+  
+  }
+  
